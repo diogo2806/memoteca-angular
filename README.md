@@ -8,11 +8,15 @@ Para instalar as dependências necessárias e iniciar os servidores, execute os 
 
 
 npm install -g @angular/cli
+npm install --save-dev @angular-devkit/build-angular
+
 
 cd memoteca/backend
 npm install -g json-server
+npm start
 
 cd memoteca
+npm install
 ng serve --disable-host-check
 
 ## Servidor de desenvolvimento
