@@ -2,6 +2,19 @@
 
 Este projeto foi gerado com o Angular CLI versão 16.1.3.
 
+## Configuração inicial
+
+Para instalar as dependências necessárias e iniciar os servidores, execute os seguintes comandos:
+
+```bash
+npm install -g @angular/cli
+
+cd memoteca/backend
+npm install -g json-server
+
+cd memoteca
+ng serve --disable-host-check
+
 ## Servidor de desenvolvimento
 
 Execute `ng serve` para um servidor de desenvolvimento. Navegue até `http://localhost:4200/`. O aplicativo será recarregado automaticamente se você alterar qualquer um dos arquivos de origem.
