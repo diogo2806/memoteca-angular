@@ -6,7 +6,7 @@ tasks:
     command: echo 'start script'
   
   - name: Iniciar Gitpod no diretório 'memoteca'
-    init: npm install -g @angular/cli && npm install --save-dev @angular-devkit/build-angular && cd memoteca && npm install && ng serve --disable-host-check && npm install -g npm
+    init: cd memoteca && npm install -g @angular/cli && npm npm install --save-dev @angular-devkit/build-angular --force && npm install && ng serve --disable-host-check && npm install -g npm
 
 #  - name: Iniciar JSON Server
  #   command: docker-compose up -d
