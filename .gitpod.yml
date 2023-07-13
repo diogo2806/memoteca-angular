@@ -1,9 +1,6 @@
 # List the start up tasks. Learn more: https://www.gitpod.io/docs/configure/workspaces/tasks
 tasks:
 
-  - name: Instalar o npm globalmente
-    command: npm install -g npm
-    
   - name: Script Task
     init: echo 'init script' # runs during prebuild => https://www.gitpod.io/docs/configure/projects/prebuilds
     command: echo 'start script'
@@ -19,7 +16,7 @@ tasks:
     command: npm install --save-dev @angular-devkit/build-angular
   
   - name: Iniciar Gitpod no diretório 'memoteca'
-    init: cd memoteca && npm install && ng serve --disable-host-check
+    init: cd memoteca && npm install && ng serve --disable-host-check && npm install -g npm
 
 #  - name: Iniciar JSON Server
  #   command: docker-compose up -d

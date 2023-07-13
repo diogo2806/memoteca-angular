@@ -1,9 +1,9 @@
-version: '3'
+#version: '3'
 
-services:
-  json-server:
-    build:
-      context: ./memoteca/backend
-      dockerfile: Dockerfile
-    ports:
-      - '3000:3000'
+#services:
+ # json-server:
+#    build:
+   #   context: ./memoteca/backend
+   #   dockerfile: Dockerfile
+  #  ports:
+  #    - '3000:3000'
