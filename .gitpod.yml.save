@@ -1,0 +1,20 @@
+# List the start up tasks. Learn more: https://www.gitpod.io/docs/configure/workspaces/tasks
+tasks:
+  - name: Script Task
+    init: echo 'init script' # runs during prebuild => https://www.gitpod.io/docs/configure/projects/prebuilds
+    command: echo 'start script'
+  
+  - name: Iniciar Gitpod no diretório 'memoteca'
+    init: cd memoteca && npm install -g @angular/cli@latest && npm install --save-dev @angular-devkit/build-angular && npm cache clean --force && rm -rf node_modules package-lock.json && npm install --force && npm install -g npm && ng serve --disable-host-check 
+
+#  - name: Iniciar JSON Server
+ #   command: docker-compose up -d 
+#    init: docker-compose build   
+
+# List the ports to expose. Learn more: https://www.gitpod.io/docs/configure/workspaces/ports
+ports:
+  - name: Frontend
+    description: Port 4200 for the frontend
+    port: 4200
+    onOpen: open-preview
+v
