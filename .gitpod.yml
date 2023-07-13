@@ -4,19 +4,9 @@ tasks:
   - name: Script Task
     init: echo 'init script' # runs during prebuild => https://www.gitpod.io/docs/configure/projects/prebuilds
     command: echo 'start script'
-
-  - name: Instalar Angular CLI globalmente
-    command: npm install -g @angular/cli
-    # Se você já tiver o Angular CLI instalado globalmente, remova a linha acima.
-
-  - name: Instalar pacotes de desenvolvimento Angular
-    command: npm install --save-dev @angular-devkit/build-angular
-
-  - name: Instalar pacotes de desenvolvimento Angular
-    command: npm install --save-dev @angular-devkit/build-angular
   
   - name: Iniciar Gitpod no diretório 'memoteca'
-    init: cd memoteca && npm install && ng serve --disable-host-check && npm install -g npm
+    init: npm install -g @angular/cli && npm install --save-dev @angular-devkit/build-angular && cd memoteca && npm install && ng serve --disable-host-check && npm install -g npm
 
 #  - name: Iniciar JSON Server
  #   command: docker-compose up -d
