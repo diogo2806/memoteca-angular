@@ -11,6 +11,13 @@ tasks:
   - name: Instalar pacotes de desenvolvimento Angular
     command: npm install --save-dev @angular-devkit/build-angular
 
+  - name: Instalar pacotes de desenvolvimento Angular
+    command: npm install --save-dev @angular-devkit/build-angular
+
+  - name: Iniciar JSON Server
+    command: docker-compose up -d
+    init: docker-compose build   
+
 # List the ports to expose. Learn more: https://www.gitpod.io/docs/configure/workspaces/ports
 ports:
   - name: Frontend
