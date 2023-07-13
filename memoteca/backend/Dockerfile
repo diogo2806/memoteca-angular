@@ -8,8 +8,6 @@ RUN npm install
 
 RUN npm install -g json-server
 
-RUN npm start
-
 COPY . .
 
 EXPOSE 3000
