@@ -21,9 +21,9 @@ tasks:
   - name: Iniciar Gitpod no diretório 'memoteca'
     init: cd memoteca && npm install && ng serve --disable-host-check
 
-  - name: Iniciar JSON Server
-    command: docker-compose up -d
-    init: docker-compose build   
+#  - name: Iniciar JSON Server
+ #   command: docker-compose up -d
+#    init: docker-compose build   
 
 # List the ports to expose. Learn more: https://www.gitpod.io/docs/configure/workspaces/ports
 ports:
