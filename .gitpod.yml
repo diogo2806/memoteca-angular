@@ -13,6 +13,9 @@ tasks:
 
   - name: Instalar pacotes de desenvolvimento Angular
     command: npm install --save-dev @angular-devkit/build-angular
+  
+  - name: Iniciar Gitpod no diretório 'memoteca'
+    init: cd memoteca && npm install && ng serve --disable-host-check
 
   - name: Iniciar JSON Server
     command: docker-compose up -d
