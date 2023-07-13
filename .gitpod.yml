@@ -4,6 +4,13 @@ tasks:
     init: echo 'init script' # runs during prebuild => https://www.gitpod.io/docs/configure/projects/prebuilds
     command: echo 'start script'
 
+  - name: Instalar Angular CLI globalmente
+    command: npm install -g @angular/cli
+    # Se você já tiver o Angular CLI instalado globalmente, remova a linha acima.
+
+  - name: Instalar pacotes de desenvolvimento Angular
+    command: npm install --save-dev @angular-devkit/build-angular
+
 # List the ports to expose. Learn more: https://www.gitpod.io/docs/configure/workspaces/ports
 ports:
   - name: Frontend
