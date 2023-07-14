@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class PensamentoService {
 
-  private readonly API = 'http://localhost:3000/pensamentos'
+  private readonly API = 'https://3000-diogo2806-memotecaangul-ib1iflhbc5h.ws-us101.gitpod.io/pensamentos'
 
   constructor(private http: HttpClient) { }
 
